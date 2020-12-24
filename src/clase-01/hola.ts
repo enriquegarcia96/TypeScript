@@ -7,4 +7,3 @@ console.log('fecha', fecha);
 let edad = 25;
 console.log('edad', edad);
 
-edad.trim();
