@@ -1,31 +1,13 @@
 "use strict";
+// usar una libreria  externa JavaScript: lodash
+// package.json
+// npm init -y
+// npm install lodash --save
 Object.defineProperty(exports, "__esModule", { value: true });
-// Miembros publicos
-var Curso = /** @class */ (function () {
-    function Curso(id, nombre) {
-        this.id = id;
-        this.nombre = nombre;
-    }
-    return Curso;
-}());
-var EscuelaDigital = /** @class */ (function () {
-    // funcion que nos permite crear objetos
-    function EscuelaDigital(nombre) {
-        this.cursos = [];
-        this.nombre = nombre;
-    }
-    EscuelaDigital.prototype.agregarCurso = function (curso) {
-        this.cursos.push(curso);
-    };
-    return EscuelaDigital;
-}());
-var escuela = new EscuelaDigital('kike');
-var cursoJS = new Curso(1, 'JavaScript');
-var cursoTS = new Curso(2, 'TypeScript');
-escuela.agregarCurso(cursoJS);
-escuela.agregarCurso(cursoTS);
-// Acceder a los atributos publicos
-cursoJS.nombre = 'Diana';
-cursoJS.id = 25;
-console.log('escuela', escuela);
-console.log('escuela.nombre', escuela.nombre);
+var lodash_1 = require("lodash");
+function numeroAleatorio(a, b) {
+    return lodash_1.random(a, b);
+}
+console.log('numero Aleatorio(1,10)', numeroAleatorio(1, 10));
+console.log('random(1,100)', lodash_1.random(1, 100));
+console.log('random(50,80)', lodash_1.random(50, 80));
