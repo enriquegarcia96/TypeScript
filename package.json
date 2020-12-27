@@ -1,0 +1,26 @@
+{
+  "name": "TypeScript_EdTeam",
+  "version": "1.0.0",
+  "description": "Curso TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enriquegarcia96/TypeScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enriquegarcia96/TypeScript/issues"
+  },
+  "homepage": "https://github.com/enriquegarcia96/TypeScript#readme",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.166"
+  }
+}
